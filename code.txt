@@ -1,0 +1,12 @@
+//connect your pen drive and check whether files is visible or not.
+//delete your jpeg files completely from pen drive and check in trash whether it's visible or not, if visible delete from there too.
+1. open kali linux
+ type  --sudo su                               //to go in root
+	 --"enter your kali password"            
+       --cd desktop                            //go to desktop
+	 --fdisk -l                              //check whether pen drive connection is visible or not"/dev/sdb1/"
+	 --sudo apt-get update                   //check whether it's updated or not
+	 --sudo apt-get -y purge recoverjpeg     //install recoverjpeg 
+	 --recoverjpeg -help                     //help command
+	 --recoverjpeg /dev/sdb1/                //copy path of pendrive 
+	 --"check on desktop whether jpeg visible or not" 
